@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+:root {
+  --color-bg: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eef1f6;
+  --color-border: #d9e0ea;
+  --color-text: #0f172a;
+  --color-text-muted: #475569;
+  --color-accent: #111827;
+  --color-accent-strong: #0b1224;
+  --color-contrast: #ffffff;
+}
+
+[data-theme="dark"] {
+  --color-bg: #0d1117;
+  --color-surface: #111827;
+  --color-surface-muted: #1a2230;
+  --color-border: #1f2a3a;
+  --color-text: #e5e7eb;
+  --color-text-muted: #9aa6b8;
+  --color-accent: #cbd5e1;
+  --color-accent-strong: #e2e8f0;
+  --color-contrast: #0b1224;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--color-text);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+p {
+  color: var(--color-text-muted);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+code,
+pre {
+  font-family: var(--font-mono), ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
